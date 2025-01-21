@@ -1,0 +1,29 @@
+n is the number of facilities (potential locations of actual facilities). m is the number of clients
+
+Format
+------
+The first line consists of 'FILE: ' and the name of the file. In the next line n, m and 0 are denoted:
+[n] [m] 0
+The next n lines consist of the number of the facility, the opening cost and the connetion cost to the clients.
+So for facility i (i = 1, ... , n) we have
+[i] [opening cost] [cost of conneting client j to facility i] (j = 1, ..., m)
+
+Example: n = 4, m = 3
+FILE: Example.txt
+4 3 0
+1 300 130 120 80
+2 400 140 100 50
+3 150 130 90 140
+4 200 100 120 150
+
+
+Solution format
+---------------
+The data-format of the solutions is very simple. At first there are m numbers in the range of [0,n-1]. 
+The i-th number is the facility client i is connected to. The last number of the file is the cost of the solution. 
+Facilities and clients are ordered by the appearance in the problem file. 
+If the number of a facility does not appear in the solution file, it remains closed in the solution.
+*Please note that the numbering starts with 0 here!*
+
+Example: n = 4, m = 3
+2 2 2 510
